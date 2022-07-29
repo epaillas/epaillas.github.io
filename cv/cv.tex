@@ -1,0 +1,465 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, a4paper]{article} % Document font size and paper size
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{benumerate}[1]{
+    \let\oldItem\item
+    \def\item{\addtocounter{enumi}{-2}\oldItem}
+    \begin{enumerate}
+    \setcounter{enumi}{#1}
+    \addtocounter{enumi}{1}
+}{
+    \end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+\usepackage{multicol}
+
+\usepackage{geometry} % Allows the configuration of document margins
+%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\geometry{a4paper, textwidth=6.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in} % Remove paragraph indentation
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+\definecolor{cornflowerblue}{rgb}{0.39, 0.58, 0.93}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Nestor Espinoza - vita},pdfauthor={Nestor Espinoza}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+\usepackage{tabularx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\pagenumbering{gobble}
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Dr. Enrique Paillas}\\[0.2cm] % Your name
+\begin{minipage}[t]{0.63\textwidth}
+Postdoctoral Fellow\\
+Waterloo Centre for Astrophysics\\
+200 University Av. W., Waterloo, ON, Canada N2L3G1 \\
+\end{minipage}
+\begin{minipage}[t]{0.37\textwidth}
+ORCiD 0000-0002-4637-2868\\
+\href{mailto:enrique.paillas@uwaterloo.ca}{enrique.paillas@uwaterloo.ca}\\
+\url{epaillas.github.io}
+\end{minipage}
+
+\hrulefill
+\section*{Education}
+
+%\begin{minipage}[t]{0.5\textwidth}
+%Birth\\
+%Languages
+%\end{minipage}
+
+%second column
+% first column
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Pontificia Universidad Cat\'olica de Chile (PUC)}\\
+Ph. D. in Astrophysics (\textit{summa cum laude})\\
+Advisor: Dr. Nelson Padilla
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2017 --- 2021
+\end{minipage}\\
+
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Pontificia Universidad Cat\'olica de Chile (PUC)}\\
+M. Sc. in Astrophysics (\textit{summa cum laude})\\
+Advisor: Dr. Nelson Padilla
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2015 --- 2017 
+\end{minipage}\\
+
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+    \textbf{Universidad Nacional Andr\'es Bello (UNAB)}\\
+ Licenciate in Astronomy (\textit{cum laude})\\
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2010 --- 2014
+\end{minipage}
+
+\section*{Fellowships \& Awards}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Excellence in Doctoral Thesis Award}\\
+ Yearly award granted by the Research Vice-Rectory at PUC.
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021
+\end{minipage}\\
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Adelina Guti\'errez Travel Grant}\\
+Research stipend awarded by the Chilean Astronomical Society.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2017
+\end{minipage}\\
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{ANID Graduate Research Fellowship}\\
+Fellowship awarded by the Chilean Ministry of Education.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2017---2021
+\end{minipage}
+
+\section*{Grants}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{ComputeCanada Resources for Research Groups 2022 competition}\\
+1,349 core years on the narval-compute system awarded to  ``Cosmology from galaxy surveys" (PI: Percival; ID 4030)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022A --- present
+\end{minipage}\\
+
+
+\section*{Software}
+Selected software under active development:\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{densitysplit --- characterization of density-dependent galaxy clustering}\\
+Lead developer | github.com/epaillas/densitysplit
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{contrast --- correlation functions for astrophysics}\\
+Lead developer | github.com/epaillas/constrast
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{pancakes --- redshift-space distortions analysis toolkit}\\
+Lead Developer  | github.com/epaillas/pancakes
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019---present
+\end{minipage}\\
+
+
+\section*{Publication List}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\begin{enumerate}
+\setlength\itemsep{0.05cm}
+
+\item {\color{cobalt}{\textbf{Paillas}, Cuesta-Lazaro, Zarrouk et al.: \textit{Constraining $\nu\Lambda$CDM through density-split clustering}, pre-print}}
+
+\item {\color{cobalt}{\textbf{Paillas}, Cai, Padilla \& S\'anchez: \textit{Redshift-space distortions with split densities}, Monthly Notices of the Royal Astronomical Society (2021), 505, 5731}}
+
+\item {\color{cobalt}{Davies, \textbf{Paillas}, Cautun \& Li: \textit{Optimal void finders in weak lensing maps}, Monthly Notices of the Royal Astronomical Society (2020), 500, 2417}}
+
+\item {\color{cobalt}{\textbf{Paillas}, Cautun, Li et al.: \textit{The Santiago-Harvard-Edinburgh-Durham void comparison II: unveiling the Vainshtein screening using weak lensing}, Monthly Notices of the Royal Astronomical Society (2020), 484, 1149}}
+
+\item Kulier et al. (including \textbf{Paillas}): \textit{The evolution of the baryon fraction in haloes as a cause of scatter in the galaxy stellar mass in the EAGLE simulation}, Monthly Notices of the Royal Astronomical Society (2019), 482, 3261K
+
+\item {\color{cobalt}{Cautun, \textbf{Paillas}, Cai et al.: \textit{The Santiago-Harvard-Edinburgh-Durham void
+    comparison I: SHEDding light on chameleon gravity tests}, Monthly Notices of the Royal Astronomical Society (2020), 476, 3195}}
+
+\item Mao et al. (including \textbf{Paillas}): \textit{DESCQA: An Automated Validation Framework for Synthetic Sky Catalogs}The Astrophysical Journal (2018), 234, 36
+
+\item {\color{cobalt}{\textbf{Paillas}, Lagos, Padilla et al.: \textit{Baryon effects on void statistics in the EAGLE simulation}, Monthly Notices of the Royal Astronomical Society (2017), 470, 4434}}
+
+\item Tak\'ats et al. (including \textbf{Paillas}): \textit{SN 2009ib: A Type II-P Supernova with an Unusually Long Plateau}, Monthly Notices of the Royal Astronomical Society (2015), 450, 3137
+
+\item Bufano et al. (including \textbf{Paillas}): \textit{SN2011hs: a Fast and Faint Type IIb Supernova from a Supergiant Progenitor}, Monthly Notices of the Royal Astronomical Society (2014), 439, 1807
+
+\item Tak\'ats. (including \textbf{Paillas}): \textit{SN 2009N: Linking normal and subluminous type II-P Sne}, Monthly Notices of the Royal Astronomical Society (2014), 438, 368
+
+\end{enumerate}
+\end{flushleft}
+
+
+
+\section*{Invited Talks}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Seminar Talk, Waterloo Centre for Astrophysics, University of Waterloo, Waterloo, ON, Canada
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Mock Innsbruck: the connection between galaxies and dark matter haloes, Innsbruck, Austria
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 04/2020
+\end{minipage}
+\vspace{0.2cm}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Seminar Talk, University Observatory, Ludwig-Maximilians-Universität München, Munich, Germany
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 06/2019
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Dynamics of the Large-scale Structure, Excellence Cluster `Origins', MIAPP, Munich, Germany
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 06/2019
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Seminar Talk, Max Planck Institute for Astronomy, Munich, Germany
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 06/2019
+\end{minipage}
+\vspace{0.2cm}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Mock C\'ordoba: galaxy formation for gravity and cosmology, Observatorio Astronómico de Córdoba, C\'ordoba, Argentina.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 04/2019
+\end{minipage}
+\vspace{0.2cm}
+
+\section*{Selected Contributed Talks}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+    Friends-of-Friends meeting, virtual conference, hosted by Observatorio Astron\'omico de C\'ordoba
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2021
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+The Cosmic Web: from galaxies to cosmology, Royal Observatory, Edinburgh, United Kingdom, 2019
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2019
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+LSST DESC Collaboration Meeting, SLAC, San Francisco, CA, United States of America
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2018
+\end{minipage}
+\vspace{0.2cm}
+
+
+\section*{Service}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for The Astrophysical Journal
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2018---present
+\end{minipage}
+
+
+\section*{Outreach (Selected talks, events \& positions)}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Author at ``Astrobitos", the spanish-speaking version of the astro-ph reader's digest ``Astrobites" 
+ [\href{https://www.astrobitos.org}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016 -- 2017
+\end{minipage}
+
+
+\section*{Teaching}
+
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Teaching Assistant}:
+\end{flushleft}
+\begin{minipage}[t]{0.6\textwidth}
+\ \ \ \ \ Introduction to Astronomy (PUC)
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2018A
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ Differential Calculus (UNAB)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014A
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ Differential Equations (UNAB)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2013A
+\end{minipage}
+\begin{minipage}[t]{0.7\textwidth}
+\ \ \ \ \ Introduction to Mathematics (UNAB)
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2012---2013
+\end{minipage}
+
+\section*{Student Supervision \& Mentoring}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Tristan Fraser (Mentor; PhD student)}\\
+Project: ``Alcock-Paczynski and RSD constraints from the void-galaxy cross-correlation in DESI Y1 data" | Institution: Waterloo Centre for Astrophysics, University of Waterloo.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021B---present
+\end{minipage}\\
+
+\end{document}
