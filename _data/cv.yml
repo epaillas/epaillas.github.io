@@ -1,10 +1,16 @@
-- title: General Information
+- title: Contact information
   type: map
   contents:
-    - name: Full Name
+    - name: Name
       value: Enrique Paillas
-    - name: Languages
-      value: Spanish, English
+    - name: Position
+      value: Postdoctoral Fellow
+    - name: Institution
+      value: Waterloo Centre for Astrophysics, University of Waterloo
+    - name: Address
+      value: 200 University Av. W., Waterloo, ON, Canada N2L3G1
+    - name: ORCiD
+      value: 0000-0002-4637-2868
 
 - title: Education
   type: time_table
