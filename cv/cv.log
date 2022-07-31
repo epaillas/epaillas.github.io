@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.11.9)  26 JUL 2022 08:11
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.11.9)  31 JUL 2022 18:05
  restricted system commands enabled.
 **cv.tex
 (./cv.tex
@@ -756,7 +756,7 @@ Overfull \hbox (1.99998pt too wide) in paragraph at lines 301--311
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 313--323
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 312--322
 [][] []
  []
 
@@ -773,18 +773,18 @@ Overfull \hbox (1.99998pt too wide) in paragraph at lines 335--345
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 347--357
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 346--356
 [][] []
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 360--370
-[] []
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 358--368
+[][] []
  []
 
 
 Overfull \hbox (1.99998pt too wide) in paragraph at lines 371--381
-[][] []
+[] []
  []
 
 
@@ -793,48 +793,60 @@ Overfull \hbox (1.99998pt too wide) in paragraph at lines 382--392
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 396--405
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 393--403
+[][] []
+ []
+
+
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 404--414
+[][] []
+ []
+
+
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 418--427
 [] [] 
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 409--419
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 431--441
 [] [] 
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 427--451
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 449--473
 [] []
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 427--451
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 449--473
 [] []
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 427--451
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 449--473
 [] []
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 427--451
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 449--473
 [] [] 
  []
 
 
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 454--464
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 476--486
 [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--464
+Underfull \hbox (badness 10000) in paragraph at lines 476--486
 
  []
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[3] (./cv.aux)
+[3]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.'
+[4] (./cv.aux)
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
@@ -846,7 +858,7 @@ Here is how much of LuaTeX's memory you used:
  441 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 55 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 2:454,3:256,4:98,5:317,6:100,7:5726,8:26,9:332,10:19,11:449
+   avail lists: 2:454,3:256,4:98,5:314,6:100,7:5624,8:26,9:348,10:19,11:437
  31306 multiletter control sequences out of 65536+600000
  54 fonts using 10634511 bytes
  81i,5n,106p,288b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -857,10 +869,10 @@ ono12-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/libe
 rtine/LinLibertine_R.otf></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr12.pfb>
-Output written on cv.pdf (3 pages, 56558 bytes).
+Output written on cv.pdf (4 pages, 57086 bytes).
 
-PDF statistics: 82 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+PDF statistics: 85 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  24 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
