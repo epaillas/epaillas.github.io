@@ -15,7 +15,7 @@ selected_papers: False # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Welcome to my page! I'm an astronomer and cosmologist, currently working as a Postdoctoral Associate at the University of Arizona. I'm originally from Chile, where I completed my PhD in Astrophysics at the Pontifical Catholic University of Chile. Before moving to Arizona, I worked as a Postdoctoral Fellow at the University of Waterloo, in Canada.
+Welcome to my page! I'm an astronomer and cosmologist, currently working as a Postdoctoral Associate at the University of Arizona, where I also hold the Prize Fellowship in Cosmological Data Analysis at Steward Observatory. I'm originally from Chile, where I completed my PhD in Astrophysics at the Pontifical Catholic University of Chile. Before moving to Arizona, I worked as a Postdoctoral Fellow at the University of Waterloo, in Canada.
 
 My main research interests revolve around precision cosmology and the large-scale structure of the Universe. I'm particularly interested in studying the way in which galaxies cluster, in order to better understand the nature of dark energy, gravity, and the physics of the early Universe.
 
