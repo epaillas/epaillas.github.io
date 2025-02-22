@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /cv/
+permalink:
 title: cv
 nav: true
 nav_order: 5
@@ -10,4 +10,6 @@ toc:
   sidebar: left
 ---
 
-You can download a PDF version of my cv [here](_assets/pdf/cv.pdf).
+# CV
+
+### You can download a PDF version of my cv [here](_assets/pdf/cv.pdf).
