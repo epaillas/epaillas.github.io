@@ -12,4 +12,4 @@ toc:
 
 # CV
 
-### You can download a PDF version of my CV [here](../_assets/pdf/cv.pdf).
+### You can download a PDF version of my CV [here](../assets/pdf/cv.pdf).
