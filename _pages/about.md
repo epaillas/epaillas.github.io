@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Chilean astronomer, currently working as a Postdoctoral Associate at the University of Arizona, where I also hold the Prize Fellowship in Cosmological Datana Analysis at [Steward Observatory](https://astro.arizona.edu). My research focuses on observational cosmology, combining theory and observations to learn about the nature of dark energy, the growth of cosmic structure, and the physics of the early Universe.
+I am a Chilean astronomer, currently working as a Postdoctoral Associate at the University of Arizona, where I also hold the Prize Fellowship in Cosmological Data Analysis at [Steward Observatory](https://astro.arizona.edu). My research focuses on observational cosmology, combining theory and observations to learn about the nature of dark energy, the growth of cosmic structure, and the physics of the early Universe.
 
 I am an active member of the [Dark Energy Spectroscopic Instrument](https://www.desi.lbl.gov) (DESI) Collaboration, where I co-chair the Galaxy & Quasar Clustering working group. I have also particiapted in the [Euclid Consortium](https://www.euclid-ec.org) and the [LSST Dark Energy Science Collaboration](https://lsstdesc.org).
 
