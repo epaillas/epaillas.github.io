@@ -28,5 +28,5 @@ I am an astronomer and cosmologist, currently working as a Postdoctoral Associat
 
 I grew up in Santiago de Chile, where I obtained my PhD in astrophysics from [Pontificia Universidad Católica de Chile](https://www.uc.cl), working under the supervision of [Nelson Padilla](https://iate.oac.uncor.edu/en/staff-members/2544/). Before moving to Arizona, I worked as a postdoctoral fellow at the [Waterloo Centre for Astrophysics](https://uwaterloo.ca/astrophysics-centre/), in Ontario, Canada, where I collaborated with [Will Percival](https://uwaterloo.ca/physics-astronomy/profile/wperciva) on various topics of large-scale structure science.
 
-I am an active member of the [Dark Energy Spectroscopic Instrument](https://www.desi.lbl.gov) (DESI) Collaboration, where I co-chair the Galaxy & Quasar Clustering working group. I have also particiapted in the [Euclid Consortium](https://www.euclid-ec.org) and the [LSST Dark Energy Science Collaboration](https://lsstdesc.org).
+I am an active member of the [Dark Energy Spectroscopic Instrument](https://www.desi.lbl.gov) Collaboration, where I co-chair the Galaxy & Quasar Clustering working group. I have also particiapted in the [Euclid Consortium](https://www.euclid-ec.org) and the [LSST Dark Energy Science Collaboration](https://lsstdesc.org).
 
