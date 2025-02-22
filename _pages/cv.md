@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: default
 permalink: /cv/
 title: cv
 nav: true
@@ -9,3 +9,5 @@ description:
 toc:
   sidebar: left
 ---
+
+You can download a PDF version of my cv [here](_assets/pdf/cv.pdf).
