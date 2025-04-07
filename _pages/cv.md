@@ -9,4 +9,6 @@ description:
 toc:
 ---
 
-### You can download a PDF version of my CV [here](../assets/pdf/cv.pdf).
+## Curriculum Vitae
+
+You can download a PDF version of my CV [here](../assets/pdf/cv.pdf).

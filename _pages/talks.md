@@ -10,6 +10,7 @@ toc:
 
 ## Talks
 
+Here is a compilation of recent science talks I've given. If you're interested in hearing more about these topics, feel free to each out to me.
 
 - ##### DESI DR2 Measurements of Baryon Acoustic Oscillations and Cosmological Constraints. [[Slides]](https://drive.google.com/file/d/1FMVLQC_rZfOu0sHagJHVIayBT_yhNzs4/view?usp=share_link)
 
