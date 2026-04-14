@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
+        },{id: "nav-lsslider",
+          title: "lsslider",
+          description: "Interactive galaxy clustering slider.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/lsslider/";
+          },
         },{id: "post-new-desi-results-revealed",
       
         title: "New DESI results revealed",
