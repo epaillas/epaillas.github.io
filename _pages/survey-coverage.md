@@ -19,6 +19,9 @@ _styles: >
   #survey-coverage .sc-spec { fill: #1d9e75; }
   #survey-coverage .sc-spec-dashed { fill: none; stroke: #1d9e75; stroke-width: 1; stroke-dasharray: 3 2; }
   #survey-coverage .sc-phot { fill: #ba7517; }
+  #survey-coverage .sc-sed { fill: none; stroke: var(--global-text-color); stroke-width: 1.2; stroke-linejoin: round; }
+  #survey-coverage .sc-sed-fill { fill: var(--global-text-color); opacity: 0.07; }
+  #survey-coverage .sc-atm { fill: #378add; fill-opacity: 0.3; stroke: #378add; stroke-width: 0.75; }
   #survey-coverage .sc-feat line { stroke-width: 1.5; stroke-dasharray: 4 3; }
   #survey-coverage .sc-feat text { font-size: 12px; fill: var(--global-text-color-light); }
   #survey-coverage .sc-feat-line line { stroke: #d85a30; }
@@ -33,14 +36,22 @@ _styles: >
   html[data-theme="dark"] #survey-coverage .sc-opt rect { fill: #444441; stroke: #b4b2a9; } html[data-theme="dark"] #survey-coverage .sc-opt text { fill: #d3d1c7; }
   html[data-theme="dark"] #survey-coverage .sc-nir rect { fill: #712b13; stroke: #f0997b; } html[data-theme="dark"] #survey-coverage .sc-nir text { fill: #f5c4b3; }
   html[data-theme="dark"] #survey-coverage .sc-mir rect { fill: #791f1f; stroke: #f09595; } html[data-theme="dark"] #survey-coverage .sc-mir text { fill: #f7c1c1; }
-  #survey-coverage .sc-controls { display: flex; align-items: center; gap: 12px; margin-top: 8px; font-size: 0.9rem; color: var(--global-text-color-light); }
+  #survey-coverage .sc-controls select { background: var(--global-bg-color); color: var(--global-text-color); border: 1px solid var(--global-divider-color); border-radius: 4px; padding: 2px 6px; }
   #survey-coverage .sc-controls label { margin: 0; }
-  #survey-coverage .sc-controls input { flex: 1; accent-color: var(--global-theme-color); }
-  #survey-coverage .sc-zout { min-width: 4.5em; font-weight: 500; color: var(--global-text-color); }
+  #survey-coverage .sc-controls { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-bottom: 4px; font-size: 0.9rem; color: var(--global-text-color-light); }
+  #survey-coverage .sc-main { display: flex; align-items: stretch; gap: 8px; }
+  #survey-coverage .sc-chart { flex: 1; min-width: 0; }
+  #survey-coverage .sc-zcol { flex: 0 0 64px; }
+  #survey-coverage .sc-zsticky { position: sticky; top: 72px; height: min(75vh, 640px, calc((100vw - 110px) * 1.05)); display: flex; flex-direction: column; align-items: center; font-size: 0.8rem; color: var(--global-text-color-light); }
+  #survey-coverage .sc-zsticky label { margin: 0; }
+  #survey-coverage .sc-zout { font-size: 1rem; font-weight: 500; color: var(--global-text-color); margin-bottom: 6px; }
+  #survey-coverage .sc-zbody { flex: 1; display: flex; gap: 4px; min-height: 0; }
+  #survey-coverage .sc-zbody input { writing-mode: vertical-lr; direction: rtl; height: 100%; width: 22px; margin: 0; accent-color: var(--global-theme-color); cursor: pointer; }
+  #survey-coverage .sc-zticks { display: flex; flex-direction: column; justify-content: space-between; padding: 6px 0; line-height: 1; }
   #survey-coverage .sc-readout { margin-top: 8px; font-size: 0.9rem; line-height: 1.7; color: var(--global-text-color-light); }
 ---
 
-Where do today's galaxy surveys observe? The chart below places the main spectroscopic (teal) and imaging (amber) surveys on a common wavelength axis. Drag the redshift slider to move key spectral features (emission lines in orange, continuum features in purple) and see which spectroscopic surveys cover Hα and [OII] at that redshift.
+Where do today's galaxy surveys observe? The chart below places the main spectroscopic (teal) and imaging (amber) surveys on a common wavelength axis. Drag the redshift slider to move a galaxy spectrum and its key features (emission lines in orange, continuum features in purple) across the bands, and see which spectroscopic surveys cover Hα and [OII] at that redshift. Switch the galaxy type to compare a star-forming galaxy, a quiescent (LRG-like) galaxy and a quasar. The blue strip at the bottom shows how much light gets through Earth's atmosphere, which is why ground-based surveys stop near 2.3 µm.
 
 <div id="survey-coverage"></div>
 
@@ -48,4 +59,4 @@ Where do today's galaxy surveys observe? The chart below places the main spectro
 
 **How to read it.** For spectroscopic surveys, the column on the left gives the approximate resolving power R. Imaging filters are drawn as individual blocks with alternating shading. The dashed Euclid NISP outline is the blue grism, which is used only in the deep fields. The darker SPHEREx segment marks its higher-resolution bands above 3.8 µm.
 
-**Caveats.** Filter and grating edges are approximate (roughly where throughput falls off), not official transmission curves. The regime boundaries are conventions: 2.5 µm is the ground-based near-/mid-infrared split, while space missions such as JWST and SPHEREx call everything up to 5 µm "near-infrared". Some of the facilities shown are not yet operating.
+**Caveats.** The galaxy spectra are simple toy models (stellar blackbodies, a 4000 Å break, Gaussian emission lines and mean Lyα-forest absorption) plotted on a log flux scale, not fits to real templates. The atmospheric transmission is an approximate, Mauna Kea-like curve meant to show where the windows are, not a site model. Filter and grating edges are approximate (roughly where throughput falls off), not official transmission curves. The regime boundaries are conventions: 2.5 µm is the ground-based near-/mid-infrared split, while space missions such as JWST and SPHEREx call everything up to 5 µm "near-infrared". Some of the facilities shown are not yet operating.
