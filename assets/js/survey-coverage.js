@@ -5,7 +5,10 @@
   if (!root) return;
 
   var NS = "http://www.w3.org/2000/svg";
-  var L0 = 0.3, L1 = 5.5, X0 = 190, X1 = 650;
+  var L0 = 0.3,
+    L1 = 5.5,
+    X0 = 190,
+    X1 = 650;
 
   // [name, [[lo, hi], ...] in micron, resolving power, optional dashed ranges]
   var spec = [
@@ -19,24 +22,108 @@
     ["Euclid NISP", [[1.206, 1.892]], "~450", [[0.926, 1.366]]],
     ["Roman grism", [[1.0, 1.93]], "~460"],
     ["Roman prism", [[0.75, 1.8]], "70–170"],
-    ["SPHEREx", [[0.75, 3.82], [3.82, 5.0]], "40–130"],
+    [
+      "SPHEREx",
+      [
+        [0.75, 3.82],
+        [3.82, 5.0],
+      ],
+      "40–130",
+    ],
   ];
   var phot = [
-    ["SDSS", [[0.3, 0.4], [0.38, 0.55], [0.54, 0.7], [0.68, 0.84], [0.8, 1.08]], "ugriz"],
-    ["DES", [[0.4, 0.55], [0.56, 0.71], [0.7, 0.86], [0.83, 1.0], [0.95, 1.06]], "grizY"],
-    ["HSC", [[0.4, 0.55], [0.54, 0.7], [0.69, 0.85], [0.85, 0.93], [0.94, 1.07]], "grizy"],
-    ["Rubin LSST", [[0.32, 0.4], [0.4, 0.55], [0.55, 0.69], [0.69, 0.82], [0.82, 0.92], [0.92, 1.08]], "ugrizy"],
-    ["Euclid", [[0.55, 0.9], [0.95, 1.21], [1.17, 1.57], [1.52, 2.02]], "VIS+YJH"],
-    ["Roman WFI", [[0.48, 0.76], [0.76, 0.98], [0.93, 1.19], [1.13, 1.45], [1.38, 1.77], [1.68, 2.0], [1.95, 2.3]], "7 bands"],
-    ["VISTA VHS", [[1.17, 1.33], [1.49, 1.78], [1.99, 2.3]], "JHKs"],
-    ["unWISE", [[2.75, 3.87], [4.0, 5.3]], "W1 W2"],
+    [
+      "SDSS",
+      [
+        [0.3, 0.4],
+        [0.38, 0.55],
+        [0.54, 0.7],
+        [0.68, 0.84],
+        [0.8, 1.08],
+      ],
+      "ugriz",
+    ],
+    [
+      "DES",
+      [
+        [0.4, 0.55],
+        [0.56, 0.71],
+        [0.7, 0.86],
+        [0.83, 1.0],
+        [0.95, 1.06],
+      ],
+      "grizY",
+    ],
+    [
+      "HSC",
+      [
+        [0.4, 0.55],
+        [0.54, 0.7],
+        [0.69, 0.85],
+        [0.85, 0.93],
+        [0.94, 1.07],
+      ],
+      "grizy",
+    ],
+    [
+      "Rubin LSST",
+      [
+        [0.32, 0.4],
+        [0.4, 0.55],
+        [0.55, 0.69],
+        [0.69, 0.82],
+        [0.82, 0.92],
+        [0.92, 1.08],
+      ],
+      "ugrizy",
+    ],
+    [
+      "Euclid",
+      [
+        [0.55, 0.9],
+        [0.95, 1.21],
+        [1.17, 1.57],
+        [1.52, 2.02],
+      ],
+      "VIS+YJH",
+    ],
+    [
+      "Roman WFI",
+      [
+        [0.48, 0.76],
+        [0.76, 0.98],
+        [0.93, 1.19],
+        [1.13, 1.45],
+        [1.38, 1.77],
+        [1.68, 2.0],
+        [1.95, 2.3],
+      ],
+      "7 bands",
+    ],
+    [
+      "VISTA VHS",
+      [
+        [1.17, 1.33],
+        [1.49, 1.78],
+        [1.99, 2.3],
+      ],
+      "JHKs",
+    ],
+    [
+      "unWISE",
+      [
+        [2.75, 3.87],
+        [4.0, 5.3],
+      ],
+      "W1 W2",
+    ],
   ];
   // Official project pages, keyed by row name (spectroscopy and imaging rows
   // can share a name prefix but are looked up separately).
   var specUrls = {
-    "HETDEX": "https://hetdex.org/",
+    HETDEX: "https://hetdex.org/",
     "SDSS/BOSS": "https://www.sdss4.org/surveys/boss/",
-    "DESI": "https://www.desi.lbl.gov/",
+    DESI: "https://www.desi.lbl.gov/",
     "4MOST": "https://www.4most.eu/",
     "Subaru PFS": "https://pfs.naoj.org/",
     "VLT MOONS": "https://vltmoons.org/",
@@ -44,17 +131,17 @@
     "Euclid NISP": "https://www.esa.int/Science_Exploration/Space_Science/Euclid",
     "Roman grism": "https://roman.gsfc.nasa.gov/",
     "Roman prism": "https://roman.gsfc.nasa.gov/",
-    "SPHEREx": "https://spherex.caltech.edu/",
+    SPHEREx: "https://spherex.caltech.edu/",
   };
   var photUrls = {
-    "SDSS": "https://www.sdss.org/",
-    "DES": "https://www.darkenergysurvey.org/",
-    "HSC": "https://hsc.mtk.nao.ac.jp/ssp/",
+    SDSS: "https://www.sdss.org/",
+    DES: "https://www.darkenergysurvey.org/",
+    HSC: "https://hsc.mtk.nao.ac.jp/ssp/",
     "Rubin LSST": "https://rubinobservatory.org/",
-    "Euclid": "https://www.esa.int/Science_Exploration/Space_Science/Euclid",
+    Euclid: "https://www.esa.int/Science_Exploration/Space_Science/Euclid",
     "Roman WFI": "https://roman.gsfc.nasa.gov/",
     "VISTA VHS": "https://www.eso.org/public/teles-instr/paranal-observatory/surveytelescopes/vista/",
-    "unWISE": "https://unwise.me/",
+    unWISE: "https://unwise.me/",
   };
 
   // [label, rest wavelength (micron), kind, label tier]
@@ -117,7 +204,10 @@
     var a = 0.38 * Math.pow(0.75 / 0.38, k / 24);
     var b = 0.38 * Math.pow(0.75 / 0.38, (k + 1) / 24);
     mk("rect", {
-      x: X(a), y: 538, width: X(b) - X(a) + 0.4, height: 4,
+      x: X(a),
+      y: 538,
+      width: X(b) - X(a) + 0.4,
+      height: 4,
       fill: "hsl(" + Math.round(275 - (275 * k) / 23) + ",75%,55%)",
     });
   }
@@ -156,8 +246,13 @@
     mk("text", { x: 180, y: cy, "dominant-baseline": "central", "text-anchor": "end", class: "sc-ts" }, null, s[2]);
     s[1].forEach(function (r, i) {
       mk("rect", {
-        x: X(r[0]) + 0.5, y: cy - 6, width: Math.max(1, X(r[1]) - X(r[0]) - 1), height: 12, rx: 2,
-        class: "sc-phot", opacity: i % 2 ? 0.95 : 0.6,
+        x: X(r[0]) + 0.5,
+        y: cy - 6,
+        width: Math.max(1, X(r[1]) - X(r[0]) - 1),
+        height: 12,
+        rx: 2,
+        class: "sc-phot",
+        opacity: i % 2 ? 0.95 : 0.6,
       });
     });
     y += 22;
@@ -175,9 +270,7 @@
   var controls = document.createElement("div");
   controls.className = "sc-controls";
   controls.innerHTML =
-    '<label for="sc-z">Redshift</label>' +
-    '<input type="range" id="sc-z" min="0" max="4" step="0.05" value="1">' +
-    '<span class="sc-zout"></span>';
+    '<label for="sc-z">Redshift</label>' + '<input type="range" id="sc-z" min="0" max="4" step="0.05" value="1">' + '<span class="sc-zout"></span>';
   root.appendChild(controls);
   var readout = document.createElement("div");
   readout.className = "sc-readout";
@@ -190,9 +283,13 @@
   function covers(l) {
     return spec
       .filter(function (s) {
-        return s[1].concat(s[3] || []).some(function (r) { return l >= r[0] && l <= r[1]; });
+        return s[1].concat(s[3] || []).some(function (r) {
+          return l >= r[0] && l <= r[1];
+        });
       })
-      .map(function (s) { return s[0]; });
+      .map(function (s) {
+        return s[0];
+      });
   }
   function regime(l) {
     for (var i = 0; i < regimes.length; i++) if (l < regimes[i][2]) return regimes[i][0].split("  ")[0].toLowerCase();
@@ -206,7 +303,9 @@
     var z = +zs.value;
     zout.textContent = "z = " + z.toFixed(2);
     fl.forEach(function (f) {
-      var l = f.rest * (1 + z), x = X(l), vis = l >= L0 && l <= L1;
+      var l = f.rest * (1 + z),
+        x = X(l),
+        vis = l >= L0 && l <= L1;
       f.g.setAttribute("opacity", vis ? 1 : 0);
       if (vis) {
         f.ln.setAttribute("x1", x);

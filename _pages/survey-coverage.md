@@ -2,7 +2,7 @@
 layout: page
 title: survey coverage
 permalink: /survey-coverage/
-description: 
+description:
 nav: false
 _styles: >
   #survey-coverage { margin: 1.5rem 0; }
