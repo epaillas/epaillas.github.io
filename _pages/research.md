@@ -19,8 +19,9 @@ _styles: >
 
 Galaxy surveys map the positions of millions of galaxies across cosmic time, and in doing so they record the expansion history of the Universe and the way structure has grown within it. My research combines theory, simulations and data from the leading surveys of this decade (mainly the [Dark Energy Spectroscopic Instrument](https://www.desi.lbl.gov), DESI, and the [Vera C. Rubin Observatory](https://rubinobservatory.org)) to test the ΛCDM model and look for signs of new physics: the nature of dark energy, the growth of cosmic structure, and the properties of neutrinos and other light relics.
 
-Below is a short summary of the main research lines of my group. Each one links to a list of selected publications.
+My full list of publications can be found [here](https://ui.adsabs.harvard.edu/public-libraries/ISMZViBlThu0ASMmdRxUzw).
 
+Below is a short summary of the main research lines of my group. Each one links to a list of selected publications. 
 </div>
 
 <div class="row align-items-center research-line">
