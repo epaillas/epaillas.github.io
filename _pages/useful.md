@@ -13,22 +13,22 @@ _styles: >
   .useful-item .more { font-weight: 500; }
 ---
 
-<!--
 <div class="row align-items-center useful-item">
   <div class="col-md-5 mb-3 mb-md-0">
-    (figure for lsslider goes here)
+    <a href="{{ '/lsslider/' | relative_url }}">
+    {% include figure.liquid loading="eager" path="assets/img/useful/lsslider.png" alt="Monopole, quadrupole and hexadecapole of the galaxy power spectrum predicted by a one-loop EFT model" class="img-fluid rounded z-depth-1" sizes="(min-width: 768px) 360px, 95vw" %}
+    </a>
   </div>
   <div class="col-md-7" markdown="1">
 
-### lsslider
+### Galaxy clustering slider
 
-Interactive galaxy clustering slider.
+How the redshift-space galaxy power spectrum multipoles respond to cosmology, galaxy bias, EFT counterterms and stochastic terms, using the one-loop FOLPS model for a DESI-like luminous red galaxy sample. It runs entirely in the browser.
 
-<a class="more" href="https://lsslider.onrender.com" target="_blank">Open the widget →</a>
+<a class="more" href="{{ '/lsslider/' | relative_url }}">Open the widget →</a>
 
   </div>
 </div>
--->
 
 <div class="row align-items-center useful-item">
   <div class="col-md-5 mb-3 mb-md-0">
